@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/oldstyle
+# catalog-date 2009-03-08 21:39:02 +0100
+# catalog-license lppl
+# catalog-version 0.2
 Name:		texlive-oldstyle
 Version:	0.2
 Release:	1
@@ -42,6 +48,7 @@ use to produce oldstyle numbers.
 #- source
 %doc %{_texmfdistdir}/source/latex/oldstyle/oldstyle.dtx
 %doc %{_texmfdistdir}/source/latex/oldstyle/oldstyle.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,3 +59,5 @@ use to produce oldstyle numbers.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
