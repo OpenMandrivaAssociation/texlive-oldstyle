@@ -6,7 +6,7 @@
 # catalog-version 0.2
 Name:		texlive-oldstyle
 Version:	0.2
-Release:	2
+Release:	3
 Summary:	Old style numbers in OT1 encoding
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/oldstyle
